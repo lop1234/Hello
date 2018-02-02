@@ -7,3 +7,6 @@ class Test_abc:
     def test_001(self):
         allure.attach("描述", "我在测试001里面")
         assert 1
+    @pytest.mark.skip(2>1, "乐意")
+    def test_002(self):
+        assert 0
